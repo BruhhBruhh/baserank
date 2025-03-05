@@ -25,6 +25,12 @@ function addRankToTable(blockNumber, user, term, rank, timestamp) {
     tbody.insertBefore(row, tbody.firstChild);
 }
 
+console.log('Contract:', cbXenContract);
+if (!cbXenContract || !cbXenContract.events) {
+    console.error('Contract initialization failed');
+    return;
+}
+
 // Subscribe to RankClaimed events
 cbXenContract.events.RankClaimed({
     fromBlock: 'latest' // Start listening from the latest block
