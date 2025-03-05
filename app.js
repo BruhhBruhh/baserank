@@ -1,11 +1,5 @@
-// Initialize Web3 with the Base Mainnet Alchemy WebSocket RPC endpoint
-const web3 = new Web3(new Web3.providers.WebsocketProvider('wss://base-mainnet.g.alchemy.com/v2/8dASJbrbZeVybFKSf3HWqgLu3uFhskOL', {
-    reconnect: {
-        auto: true,
-        delay: 5000, // 5 seconds
-        maxAttempts: 5
-    }
-}));
+// Initialize Web3 with the Base Mainnet Alchemy HTTPS RPC endpoint (for testing)
+const web3 = new Web3('https://base-mainnet.g.alchemy.com/v2/8dASJbrbZeVybFKSf3HWqgLu3uFhskOL');
 
 // Test Web3 connection
 web3.eth.getBlockNumber()
@@ -18,7 +12,6 @@ const contractABI = [
     // Your ABI here (as provided earlier)
     // ...
 ];
-
 
 // Initialize the contract
 const cbXenContract = new web3.eth.Contract(contractABI, contractAddress);
