@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cbXEN cRANK Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>cbXEN cRANK Status</h1>
+    <p>Real-time data of cRANK claims on the Base Mainnet for cbXEN.</p>
+    <table id="rankTable">
+        <thead>
+            <tr>
+                <th>Block Number</th>
+                <th>User Address</th>
+                <th>Term (Days)</th>
+                <th>Rank</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody id="rankData">
+            <!-- Data will be inserted here dynamically -->
+        </tbody>
+    </table>
 
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
