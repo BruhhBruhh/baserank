@@ -1,5 +1,5 @@
 // Initialize Web3 with the Base Mainnet Alchemy RPC endpoint
-const web3 = new Web3('https://base-mainnet.g.alchemy.com/v2/8dASJbrbZeVybFKSf3HWqgLu3uFhskOL');
+const web3 = new Web3('wss://base-mainnet.g.alchemy.com/v2/8dASJbrbZeVybFKSf3HWqgLu3uFhskOL');
 
 // Contract address and ABI
 const contractAddress = '0xffcbF84650cE02DaFE96926B37a0ac5E34932fa5';
