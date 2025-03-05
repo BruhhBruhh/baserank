@@ -13,6 +13,7 @@ const contractABI = [
     // ...
 ];
 
+
 // Initialize the contract
 const cbXenContract = new web3.eth.Contract(contractABI, contractAddress);
 
